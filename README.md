@@ -6,12 +6,6 @@ A custom Salesforce CRM built to manage reservations, guests, menu items, and or
 
 ---
 
-## 🎥 Live Walkthrough
-
-🎬 **[Watch the walkthrough on Loom](https://www.loom.com/share/d57bfec3c3c543e685902cc014248e4a)**
-
----
-
 ## 📋 What This CRM Does
 
 A restaurant manager using this CRM can:
