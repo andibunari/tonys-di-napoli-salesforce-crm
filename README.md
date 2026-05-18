@@ -1,6 +1,6 @@
 # Tony's Di Napoli — Salesforce Restaurant CRM
 
-A custom Salesforce CRM built to manage reservations, guests, menu items, and orders for a real-world restaurant. This is a portfolio project demonstrating end-to-end Salesforce admin skills — from data modeling to automation, UI, and reporting.
+A custom Salesforce CRM built to manage reservations, guests, menu items, and orders for a real-world restaurant. This is a portfolio project demonstrating end-to-end Salesforce admin skills from data modeling to automation, UI, and reporting.
 
 **Why this project:** I waited tables at Tony's Di Napoli in NYC for 10 years. After earning three Salesforce certifications (Associate, Admin, Platform App Builder), I wanted to ground my admin skills in a domain I actually understand. Most demo orgs feel generic. This one solves real problems I saw on the floor.
 
