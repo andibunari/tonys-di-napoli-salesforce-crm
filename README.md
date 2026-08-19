@@ -3,6 +3,8 @@
 A custom Salesforce CRM built to manage reservations, guests, menu items, and orders for a real-world restaurant. This is a portfolio project demonstrating end-to-end Salesforce admin skills from data modeling to automation, UI, and reporting.
 
 **Why this project:** I waited tables at Tony's Di Napoli in NYC for 10 years. After earning three Salesforce certifications (Associate, Admin, Platform App Builder), I wanted to ground my admin skills in a domain I actually understand. Most demo orgs feel generic. This one solves real problems I saw on the floor.
+<img width="979" height="863" alt="01-restaurant-crm-app" src="https://github.com/user-attachments/assets/02ae3e43-fb73-44b7-9db1-ca309e0fff67" />
+
 
 ---
 
@@ -31,17 +33,30 @@ A restaurant manager using this CRM can:
 
 Real Tony's location names are used in picklist values (Main Floor Dining Room, Wine Room, Party Room, Café, Main Bar, etc.) for authenticity.
 
+<img width="1280" height="720" alt="05-reservation-data-model" src="https://github.com/user-attachments/assets/3458c772-2284-4df5-8f45-f82be611a172" />
+
+
 ### Automation — 3 Flows + 2 Validation Rules
 
 **Flow 1 — Reserve a Table:** When a reservation is created, the linked table's status flips to "Reserved" automatically.
+<img width="1159" height="863" alt="02-flow-reserve-table" src="https://github.com/user-attachments/assets/4a7c38aa-c6de-4de4-949e-5965ab0c8bb7" />
+
 
 **Flow 2 — Release a Table:** When a reservation is marked Completed or Cancelled, the linked table's status returns to "Available."
+<img width="1280" height="720" alt="03-flow-release-table" src="https://github.com/user-attachments/assets/a130c2c1-3633-4d93-9a11-7dae8c666b19" />
+
 
 **Flow 3 — Track Guest Visits:** When a reservation is marked Completed, the linked guest's Total Visits counter increments by 1 and Last Visit Date updates to today. Built with null-safe formula handling using `BLANKVALUE()`.
+<img width="1159" height="863" alt="04-flow-track-guest-visits" src="https://github.com/user-attachments/assets/ab151c50-7549-4901-b968-468320dcc735" />
+
 
 **Validation Rule 1:** Guests must have either a phone number OR an email — at least one contact method required.
+<img width="1280" height="720" alt="07-validation-guest-contact" src="https://github.com/user-attachments/assets/fcb49b21-fca4-4c12-aed2-1f63ee10409e" />
+
 
 **Validation Rule 2:** Reservation party size cannot exceed the linked table's capacity. Prevents double-booking small tables for large parties.
+<img width="1280" height="720" alt="06-validation-reservation-capacity" src="https://github.com/user-attachments/assets/d1e50b30-2aa0-43a0-b85f-88da2a902768" />
+
 
 ### UI — Custom Lightning App
 
@@ -53,12 +68,16 @@ Custom-branded Restaurant CRM Lightning App with Tony's Di Napoli logo, dedicate
 - **Busiest Reservation Days** — reservations grouped by date, sum of party sizes (covers)
 - **Top Ordered Menu Items** — menu items ranked by quantity sold and revenue (filtered to served orders only)
 - **VIP Guests by Total Visits** — loyalty leaderboard
+<img width="1159" height="863" alt="08-restaurant-crm-reports" src="https://github.com/user-attachments/assets/88f6f1f7-5ffa-43e3-80ba-274efd04e05c" />
+
 
 **1 Executive Dashboard** — Restaurant Overview, including:
 - Total Reservations metric (with conditional formatting)
 - Total Covers metric (with thresholds based on real Tony's operational benchmarks)
 - Bar charts for busiest days and top menu items
 - Lightning Table for VIP guest list
+<img width="1159" height="863" alt="09-restaurant-crm-dashboards" src="https://github.com/user-attachments/assets/11963772-4a2b-4ba3-a7db-76c0f31e1958" />
+
 
 ---
 
